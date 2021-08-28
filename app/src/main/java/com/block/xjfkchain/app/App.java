@@ -36,6 +36,8 @@ import com.zhouyou.http.cache.model.CacheMode;
  */
 public class App extends Application {
 
+    private int flag=0;
+
     private static App myApplication = null;
 
     private LoginEntity mUserEntity;
