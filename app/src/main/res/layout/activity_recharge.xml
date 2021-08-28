@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/activity_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/donwload_icon"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="钱包地址"
+            android:textColor="#ffc2cefa"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="276dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:background="@mipmap/download_address_bg"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="www.asdflj324ljhlajsdhglj43ljbngojb34adljfh45324kbvaa"
+            android:textColor="#ff6075d7"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="扫码或复制钱包地址转入FIL"
+        android:textColor="#ff6075d7"
+        android:textSize="12sp" />
+</LinearLayout>
+

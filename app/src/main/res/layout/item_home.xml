@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/news_title"
+                android:layout_width="match_parent"
+                android:text="父亲节，让我们重温习近平写给父亲的一封信"
+                android:textColor="#ffd2d9f1"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/home_item_time"
+                    android:drawablePadding="4dp"
+                    android:textColor="#ffc2cefa"
+                    android:textSize="10sp"
+                    tools:text="2019年12月09日 20:17:34" />
+
+                <TextView
+                    android:id="@+id/tv_read_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@mipmap/home_item_red"
+                    android:drawablePadding="4dp"
+                    android:textColor="#ffc2cefa"
+                    android:textSize="10sp"
+                    tools:text="354" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_img"
+            android:layout_width="122dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="3dip" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#8390C3" />
+</LinearLayout>
